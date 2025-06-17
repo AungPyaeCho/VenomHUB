@@ -1962,7 +1962,7 @@ footer {
 }
 
 .footer-logo-img {
-    max-width: 120px; /* Smaller logo size */
+    max-width: 200px; /* Smaller logo size */
     height: auto;
 }
 

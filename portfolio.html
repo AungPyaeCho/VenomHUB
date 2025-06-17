@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Venom HUB">
 
-
     <title>Venom HUB - Software Development</title>
 
     <link rel="icon" type="image/png" href="/img/3.ico">
@@ -29,8 +28,7 @@
     <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
 
     <!-- Google Fonts - Change if needed -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet'
-        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
@@ -45,6 +43,79 @@
     <!-- Custom CSS. Input here your changes -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Portfolio Styles -->
+    <style>
+        .portfolio-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        .portfolio-section h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            color: #333;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 0 15px;
+        }
+        .portfolio-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-card iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            display: block;
+        }
+        .portfolio-card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio-card-content h3 {
+            margin: 0 0 10px;
+            font-family: 'Oxygen', sans-serif;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .portfolio-card-content p {
+            margin: 0 0 20px;
+            color: #666;
+            font-size: 1rem;
+        }
+        .portfolio-card-content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f89433;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .portfolio-card-content a:hover {
+            background-color: #e07b00;
+        }
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            .portfolio-card iframe {
+                height: 400px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -71,7 +142,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="ourteam.html">Our Team</a></li>
                             <li><a href="portfolio.html">Portfolio</a></li>
@@ -87,24 +158,15 @@
 
     <!-- Hero Header -->
     <header class="hero-header" id="slider">
-        <!--<div class="overlay"></div>-->
         <div class="container">
-            <!--
-            <div class="intro-text">
-                <h1 class="intro-lead-in">Welcome To Venom HUB!</h1>
-                <h2 class="intro-heading">Your Trusted Software Development Partner</h2>
-                
-            </div>
-        -->
-            <!-- Dots with embedded controls -->
             <div class="dots-controls">
-                <button id="prev" class="control-btn">&#10094;</button>
+                <button id="prev" class="control-btn">❮</button>
                 <div class="dots">
                     <span class="dot" data-slide="0"></span>
                     <span class="dot" data-slide="1"></span>
                     <span class="dot" data-slide="2"></span>
                 </div>
-                <button id="next" class="control-btn">&#10095;</button>
+                <button id="next" class="control-btn">❯</button>
             </div>
         </div>
     </header>
@@ -116,993 +178,96 @@
         <img src="img/slide3.jpg" alt="Slide 3">
     </div>
 
-    <!-- 4 Column Portfolio Filter -->
-    <section class="filter-section">
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-xs-12">
-
-                    <h1>4 Column Portfolio</h1>
-
-                    <div class="filter-container isotopeFilters">
-                        <ul class="list-inline filter">
-                            <li class="active"><a href="#" data-filter="*">All </a><span>/</span></li>
-                            <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
-                            <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
-                            <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
-                            <li><a href="#" data-filter=".art">Art</a></li>
-                        </ul>
+            <h1>Our Portfolio</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <iframe src="https://www.socialadsdigital.com/" title="Social Ads Digital" scrolling="auto"></iframe>
+                    <div class="portfolio-card-content">
+                        <h3>Social Ads Digital</h3>
+                        <p>A dynamic digital marketing platform designed to boost online presence with targeted ad solutions.</p>
+                        <a href="https://www.socialadsdigital.com/" target="_blank">Visit Site</a>
                     </div>
-
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- 4 Column Portfolio -->
-    <section class="portfolio-section port-col">
-        <div class="container">
-            <div class="row">
-                <div class="isotopeContainer">
-                    <div class="col-md-3 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
+                <div class="portfolio-card">
+                    <iframe src="https://thiri-eight.vercel.app/" title="Thiri Eight" scrolling="auto"></iframe>
+                    <div class="portfolio-card-content">
+                        <h3>Thiri Eight</h3>
+                        <p>An elegant and modern website showcasing creative design and seamless user experience.</p>
+                        <a href="https://thiri-eight.vercel.app/" target="_blank">Visit Site</a>
                     </div>
-                    <div class="col-md-3 isotopeSelector illustrations">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
+                </div>
+                <div class="portfolio-card">
+                    <iframe src="https://missphoothet.vercel.app/" title="Miss Phoo Thet" scrolling="auto"></iframe>
+                    <div class="portfolio-card-content">
+                        <h3>Miss Phoo Thet</h3>
+                        <p>A vibrant personal portfolio highlighting unique design and engaging content.</p>
+                        <a href="https://missphoothet.vercel.app/" target="_blank">Visit Site</a>
                     </div>
-                    <div class="col-md-3 isotopeSelector websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector photography websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector photography art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector illustrations">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector art websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-3 isotopeSelector websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
+                </div>
+                <div class="portfolio-card">
+                    <iframe src="https://studiohm.vercel.app/" title="Studio HM" scrolling="auto"></iframe>
+                    <div class="portfolio-card-content">
+                        <h3>Studio HM</h3>
+                        <p>A creative studio website with a focus on visually stunning design and intuitive navigation.</p>
+                        <a href="https://studiohm.vercel.app/" target="_blank">Visit Site</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-    <!-- 3 Column Portfolio Filter -->
-    <section class="filter-section">
+    <!-- FOOTER 1 -->
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-xs-12">
-                    <h1>3 Column Portfolio</h1>
-                    <div class="filter-container isotopeFilters2">
-                        <ul class="list-inline filter">
-                            <li class="active"><a href="#" data-filter="*">All </a><span>/</span></li>
-                            <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
-                            <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
-                            <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
-                            <li><a href="#" data-filter=".art">Art</a></li>
-                        </ul>
+                <div class="col-md-4 footer-logo-contact">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="VenomHUB Logo" class="footer-logo-img">
+                        </a>
                     </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 3 Column Portfolio -->
-    <section class="portfolio-section port-col">
-        <div class="container">
-            <div class="row">
-                <div class="isotopeContainer2">
-                    <div class="col-md-4 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector illustrations">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="row margin-0 project-content">
-                                        <div class="col-md-12 info-head">
-                                            <h3>Project Title</h3>
-                                            <h4>Category</h4>
-                                        </div>
-                                        <div class="col-md-12 info">
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                            <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector photography websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-md-4 isotopeSelector photography art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- 2 Column Portfolio Filter -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-xs-12">
-                    <h1>2 Column Portfolio</h1>
-                    <div class="filter-container isotopeFilters3">
-                        <ul class="list-inline filter">
-                            <li class="active"><a href="#" data-filter="*">All </a><span>/</span></li>
-                            <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
-                            <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
-                            <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
-                            <li><a href="#" data-filter=".art">Art</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 3 Column Portfolio -->
-    <section class="portfolio-section port-col">
-        <div class="container">
-            <div class="row">
-                <div class="isotopeContainer3">
-                    <div class="col-sm-6 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 isotopeSelector illustrations">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 isotopeSelector websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-6 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- 1 Column Portfolio Filter -->
-    <section class="filter-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-xs-12">
-                    <h1>1 Column Portfolio</h1>
-                    <div class="filter-container isotopeFilters4">
-                        <ul class="list-inline filter">
-                            <li class="active"><a href="#" data-filter="*">All </a><span>/</span></li>
-                            <li><a href="#" data-filter=".illustrations">Illustrations</a><span>/</span></li>
-                            <li><a href="#" data-filter=".photography">Photography</a><span>/</span></li>
-                            <li><a href="#" data-filter=".websites">Websites</a><span>/</span></li>
-                            <li><a href="#" data-filter=".art">Art</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 1 Column Portfolio -->
-    <section class="portfolio-section port-col">
-        <div class="container">
-            <div class="row">
-                <div class="isotopeContainer4">
-                    <div class="col-sm-12 isotopeSelector art">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-12 isotopeSelector illustrations">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-12 isotopeSelector websites">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-sm-12 isotopeSelector photography">
-                        <article class="">
-                            <figure>
-                                <img src="http://placehold.it/625x450" alt="">
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="inner-overlay">
-                                        <div class="row margin-0 project-content">
-                                            <div class="col-md-12 info-head">
-                                                <h3>Project Title</h3>
-                                                <h4>Category</h4>
-                                            </div>
-                                            <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-   <!-- FOOTER 1 -->
-   <footer>
-    <div class="container">
-        <div class="row">
-            <!-- Logo and Contact Info -->
-            <div class="col-md-3 footer-logo-contact">
-                <div class="footer-logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="VenomHUB Logo" class="footer-logo-img">
-                    </a>
-                </div>
-                <div class="contact-info">
-                    <address class="margin-bottom-30">
-                        <p>Bangkok
+                    <div class="contact-info">
+                        <address class="margin-bottom-30">
+                            <p>Bangkok</p>
+                        </address>
+                        <p class="contact-details">
+                            <i class="fa fa-phone"></i> +95 9 42105 1708<br />
+                            <i class="fa fa-envelope"></i> <a href="mailto:venomhubsoftwaredevelopment@gmail.com">venomhubsoftwaredevelopment@gmail.com</a>
                         </p>
-                    </address>
-                    <p class="contact-details">
-                        <i class="fa fa-phone"></i> <br />
-                        <i class="fa fa-envelope"></i> <a
-                            href="mailto:venomhubsoftwaredevelopment@gmail.com">venomhubsoftwaredevelopment@gmail.com</a>
-                    </p>
-
+                    </div>
+                </div>
+                <div class="col-md-4 footer-about-us">
+                    <h4>About Us</h4>
+                    <p>At VenomHUB, we are dedicated to providing innovative technology solutions that drive your business forward. Our team of experts is here to help you with custom software, web development, and more.</p>
+                    <a href="aboutus.html" class="btn btn-primary mt-3" style="background-color: #f89433; border-color: #f89433;">More</a>
+                </div>
+                <div class="col-md-4 footer-navigation">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="ourteam.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <!-- About Us Section -->
-            <div class="col-md-3 footer-about-us">
-                <h4>About Us</h4>
-                <p>At VenomHUB, we are dedicated to providing innovative technology solutions that drive your
-                    business forward. Our team of experts is here to help you with custom software, web development,
-                    and more.</p>
-                <a href="aboutus.html" class="btn btn-primary mt-3"
-                    style="background-color: #f89433; border-color: #f89433;">More</a>
-            </div>
-
-            <!-- Recent Blog Posts -->
-            <div class="col-md-3 footer-blog">
-                <h4>Recent Blog Posts</h4>
-                <ul>
-                    <li><a href="#">How We Revolutionize Tech Solutions</a><br /><small>September 12 / Alex
-                            Smith</small></li>
-                    <li><a href="#">Top Trends in Web Development</a><br /><small>August 30 / Jamie Doe</small></li>
-                    <li><a href="#">Understanding Modern ERP Systems</a><br /><small>July 15 / Chris Johnson</small>
-                    </li>
-
-                </ul>
-            </div>
-
-            <!-- Navigation Links -->
-            <div class="col-md-3 footer-navigation">
-                <h4>Navigate</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="ourteam.html">Our Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
     <!-- Scripts -->
-    <!-- Loads Bootstrap Main JS -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
-
-    <!-- Initiate Google Maps - For more Infos look into the documentation -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/google-map.js"></script>
-
-    <!-- Initiate Portoflio Script -->
     <script src="extensions/portfolio/isotope.min.js"></script>
     <script src="extensions/portfolio/portfolio.js"></script>
-
-    <!-- Initiate Fancybox/Lightbox Script -->
-    <!-- Fancybox/Lightbox -->
     <script type="text/javascript" src="extensions/fancybox/jquery.fancybox.js"></script>
     <script type="text/javascript" src="extensions/fancybox/jquery.fancybox.pack.js"></script>
     <link rel="stylesheet" type="text/css" href="extensions/fancybox/jquery.fancybox.css" media="screen" />
     <script type="text/javascript" src="extensions/fancybox/jquery.fancybox-media.js"></script>
-    <!-- Initiate Fancybox/Lightbox for Videos -->
     <script type="text/javascript">
         const slider = document.getElementById('slider');
         const imageContainer = document.getElementById('slider-images');
@@ -1114,7 +279,6 @@
         function showSlide(index) {
             currentIndex = index;
             slider.style.backgroundImage = `url(${images[currentIndex]})`;
-
             dots.forEach((dot, i) => {
                 dot.classList.remove('active');
                 if (i === currentIndex) {
@@ -1135,7 +299,7 @@
         document.getElementById('next').addEventListener('click', () => {
             changeSlide(1);
             clearInterval(sliderInterval);
-            autoSlide(); // Restart the interval on manual change
+            autoSlide();
         });
 
         document.getElementById('prev').addEventListener('click', () => {
@@ -1149,18 +313,14 @@
                 const index = parseInt(e.target.getAttribute('data-slide'));
                 showSlide(index);
                 clearInterval(sliderInterval);
-                autoSlide(); // Restart the interval on manual change
+                autoSlide();
             });
         });
 
-        // Initial setup
         showSlide(currentIndex);
-        autoSlide(); // Start the automatic slide
+        autoSlide();
 
         $(document).ready(function () {
-            /*
-             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
-             */
             $('.fancybox-media')
                 .attr('rel', 'media-gallery')
                 .fancybox({
