@@ -49,13 +49,52 @@
             padding: 60px 0;
             background-color: #f8f9fa;
         }
-        .portfolio-section h1 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: 700;
-            color: #333;
-        }
+        .portfolio-section h1,
+.portfolio-section h2,
+.client-logo-section h2 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+}
+
+.portfolio-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.portfolio-section h2,
+.client-logo-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #555;
+    /* Remove this line to allow proper centering */
+    /* display: inline-block; */
+}
+
+.portfolio-section h2::after,
+.client-logo-section h2::after {
+    content: '';
+    display: block;
+    margin: 10px auto 0;
+    width: 60px;
+    height: 4px;
+    background-color: #f89433;
+    border-radius: 2px;
+}
+
+.badge {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -115,6 +154,73 @@
                 height: 400px;
             }
         }
+
+        .client-logo-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.client-logo-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-card:hover {
+    transform: scale(1.05);
+}
+
+.logo-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-card span {
+    display: block;
+    font-size: 0.95rem;
+    color: #444;
+    font-weight: 600;
+}
+
+.portfolio-section h1,
+.portfolio-section h2,
+.client-logo-section h2 {
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
     </style>
 </head>
 
@@ -182,6 +288,8 @@
     <section class="portfolio-section">
         <div class="container">
             <h1>Our Portfolio</h1>
+
+            <h2>Web Development Projects</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <iframe src="https://www.socialadsdigital.com/" title="Social Ads Digital" scrolling="auto"></iframe>
@@ -226,6 +334,70 @@
             </div>
         </div>
     </section>
+
+    <section class="client-logo-section">
+    <div class="container">
+        <h2>Our System & Software Clients</h2>
+        <div class="logo-grid">
+            <div class="logo-card">
+                <img src="/img/partner/OMEGA SUITE.png" alt="OMEGA Suite" />
+                <span>ERP System</span>
+            </div>
+            <div class="logo-card">
+                <img src="/img/partner/DigiLight (2).png" alt="Digi Light" />
+                <span>POS System</span>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+<section class="portfolio-section">
+    <div class="container">
+        <h2>Our Software Products</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                    <h3>OMEGA Suite (ERP Software)</h3>
+                    <p>A powerful ERP platform designed for streamlined enterprise resource management and scalability.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                    <h3>VH Project Management</h3>
+                    <p>Collaborative and efficient task and project tracking system, perfect for agile teams and businesses.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                    <h3>VH LMS</h3>
+                    <p>Robust Learning Management System (LMS) tailored for e-learning, exams, and certification workflows.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                    <h3>Beauty Salon Management</h3>
+                    <p>Salon appointment scheduling, customer profiles, inventory tracking — all in one modern system.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                    <h3>VH EV Suite</h3>
+                    <p>An intelligent suite for managing electric vehicle operations, including charge tracking and reporting.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-card-content">
+                    <h3>VH LAW Firm Suite</h3>
+                    <p>Comprehensive software for legal firms to manage case tracking, client documentation, and billing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- FOOTER 1 -->
     <footer>

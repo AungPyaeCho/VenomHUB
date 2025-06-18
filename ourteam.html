@@ -50,6 +50,103 @@
     <!-- Custom CSS. Input here your changes -->
     <link href="css/style.css" rel="stylesheet">
 
+    <style>
+/* Section Styling */
+.page-section {
+    padding: 60px 0;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+/* Titles */
+.title-section {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+.title-regular {
+    color: #f89433;
+}
+.title-underline-center {
+    width: 80px;
+    height: 4px;
+    background-color: #f89433;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+
+/* Team Cards */
+.team-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.team-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+.team-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+.team-role {
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+.team-desc {
+    font-size: 0.92rem;
+    color: #555;
+}
+.team-social a {
+    margin: 0 8px;
+    color: #555;
+    font-size: 1.1rem;
+}
+.team-social a:hover {
+    color: #f89433;
+}
+
+/* Grid Members */
+.team-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px 15px;
+    transition: all 0.3s ease;
+}
+.team-box:hover {
+    background-color: #fefefe;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transform: translateY(-3px);
+}
+.team-box h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.team-box p {
+    color: #777;
+    margin: 0;
+}
+</style>
+
+
+
 </head>
 
 <body>
@@ -121,8 +218,6 @@
         <img src="img/slide3.jpg" alt="Slide 3">
     </div>
 
-
-
     <!-- Intro -->
     <section class="page-section padding-30">
         <div class="container intro">
@@ -139,202 +234,133 @@
         </div>
     </section>
 
-    <!-- OUR TEAM -->
-    <section class="page-section padding-60">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br />TEAM</h2>
-                    <hr class="title-underline-center" />
+    <!-- OUR MANAGEMENT TEAM -->
+<section class="page-section padding-60 bg-white">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-md-12">
+                <h2 class="title-section"><span class="title-regular">OUR</span><br />Management Team</h2>
+                <hr class="title-underline-center" />
+            </div>
+        </div>
+
+        <div class="row team-profile">
+            <!-- Management Member -->
+            <div class="col-md-4 mb-5">
+                <div class="team-card text-center">
+                    <img src="img/team/CEO1.jpeg" class="img-fluid team-img mb-3" alt="Alex Cho, CEO">
+                    <h4 class="team-name">Alex Cho</h4>
+                    <p class="team-role">Chief Executive Officer</p>
+                    <p class="team-desc">
+                        Alex brings 10+ years of combined experience in software development and corporate leadership. His vision drives innovation at VenomHUB, delivering transformative solutions across industries.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div class="team-card text-center">
+                    <img src="img/team/" class="img-fluid team-img mb-3" alt="Nay Zaw Aung, Co-Founder">
+                    <h4 class="team-name">Nay Zaw Aung</h4>
+                    <p class="team-role">Co-Founder & Front-End Lead</p>
+                    <p class="team-desc">
+                        With over 6 years in full-stack development, Nay Zaw Aung leads UI initiatives and builds scalable front-end architectures with a sharp focus on user experience, performance, and security.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div class="team-card text-center">
+                    <img src="img/team/COO2.jpg" class="img-fluid team-img mb-3" alt="Myo Su Mon Kyaw, COO">
+                    <h4 class="team-name">Myo Su Mon Kyaw</h4>
+                    <p class="team-role">Chief Operating Officer</p>
+                    <p class="team-desc">
+                        Myo Su Mon brings a strong foundation in education, training, and client relations. Her leadership ensures seamless operations and growth strategies for team and client success.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container team-member">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/team/CEO1.jpeg" class="img-team" alt="Alex Cho, CEO & Founder">
-                    <h2>Alex Cho</h2>
-                    <h3>CEO</h3>
-                    <p>
-                        Alex Cho is the CEO of VenomHUB, with over 5 years in software development and 5
-                        years in business and corporate leadership. He has expertise in C#, ASP.NET, Java, PHP, and
-                        various databases. Alex is dedicated to driving innovation and delivering impactful solutions,
-                        drawing from his diverse experience across industries like aviation and technology. His
-                        visionary leadership and relentless pursuit of excellence continue to inspire the company and
-                        shape its future.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
+    </div>
+</section>
 
-                <div class="col-md-4">
-                    <img src="img/team/dev.jpeg" class="img-team" alt="Nay Zaw Aung, Co-Founder & Front-End Team Lead">
-                    <h2>Nay Zaw Aung</h2>
-                    <h3>Co-Founder & Front-End Team Lead</h3>
-                    <p>
-                        Nay Zaw Aung is a skilled full-stack developer with nearly 6 years of experience in building
-                        high-performance web applications. His expertise includes HTML, CSS, Bootstrap, PHP, Laravel,
-                        JavaScript, jQuery, Vue.js (Vite), Nuxt.js, Vuex, Pinia, MySQL, and REST APIs. Aung is adept at
-                        transforming complex requirements into intuitive and responsive user interfaces. He focuses on
-                        performance optimisation, scalability, and security best practices, leading project lifecycles
-                        to deliver solutions that surpass client expectations.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/team/COO2.jpg" class="img-team" alt="Myo Su Mon Kyaw, COO">
-                    <h2>Myo Su Mon Kyaw</h2>
-                    <h3>Chief Operating Officer</h3>
-                    <p>
-                        Myo Su Mon Kyaw is the COO of VenomHUB, with over four years of experience in education and training, and a background in client relationship management. 
-                        She has expertise in curriculum development, classroom management, and personalised learning strategies. 
-                        Myo Su Mon is passionate about fostering growth and development, drawing from her diverse experience in teaching, counselling, and career consulting. 
-                        Her commitment to empowering individuals and driving positive change will be instrumental in shaping VenomHUB's operational excellence.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
+<!-- OUR TEAM MEMBERS -->
+<section class="page-section padding-60 bg-light">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-md-12">
+                <h2 class="title-section"><span class="title-regular">OUR</span><br />Team Members</h2>
+                <hr class="title-underline-center" />
+                <p class="team-subtitle">50+ remote developers and 10+ in-house professionals powering our projects.</p>
             </div>
-
-                        <!--
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/team/CEO1.jpeg" class="img-team" alt="Htet Kay Khaing Myint, Head of HR">
-                    <h2>Htet Kay Khaing Myint</h2>
-                    <h3>Head of HR</h3>
-                    <p>
-                        Htet Kay Khaing Myint brings 5+ years of experience in Human Resources to VenomHUB, specializing in recruitment, employee relations, and performance management. 
-                        With a proven track record of success in creating positive and productive work environments, she excels at building strong relationships with employees and implementing effective HR strategies. 
-                        Her passion for continuous improvement and dedication to employee development make her a valuable asset to the VenomHUB team.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-
-
-                <div class="col-md-4">
-                    <img src="img/team/dev.jpeg" class="img-team" alt="Aung Kaung Myat, Full-Stack Developer">
-                    <h2>Aung Kaung Myat</h2>
-                    <h3>Full-Stack Developer</h3>
-                    <p>
-                        Aung Kaung Myat is a skilled full-stack developer with nearly 3 years of experience in building
-                        high-performance web applications. His expertise includes HTML, CSS, Bootstrap, PHP, Laravel,
-                        JavaScript, jQuery, Vue.js (Vite), Nuxt.js, Vuex, Pinia, MySQL, and REST APIs. Aung is adept at
-                        transforming complex requirements into intuitive and responsive user interfaces. He focuses on
-                        performance optimisation, scalability, and security best practices, leading project lifecycles
-                        to deliver solutions that surpass client expectations.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="img/team/QA.jpeg" class="img-team" alt="Ei Khant Mon, QA Engineer">
-                    <h2>Ei Khant Mon</h2>
-                    <h3>QA Engineer</h3>
-                    <p>
-                        Ei Khant Mon is a dedicated QA Engineer with over 5 years of experience in the software
-                        industry. She specialises in Test Planning, Test Design, Test Execution, and Defect Reporting
-                        and Tracking. Known for her strong analytical abilities and problem-solving skills, Ei ensures
-                        high-quality solutions. Her excellent communication and interpersonal skills enable her to
-                        collaborate effectively within teams. Ei is committed to continuous learning and embracing
-                        emerging technologies to achieve the best outcomes for every project.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/team/mob.jpeg" class="img-team" alt="Myo Yadanar Hlaing, Mobile Developer Team Lead">
-                    <h2>Myo Yadanar</h2>
-                    <h3>Mobile Developer Team Lead</h3>
-                    <p>
-                        Myo Yadanar is an enthusiastic mobile developer and team lead with a passion for creating
-                        functional and aesthetically pleasing apps. Continuously learning and adapting to the latest
-                        technologies, she embraces new challenges in the dynamic tech landscape. Myo's goal is to excel
-                        as a developer and contribute significantly to technological advancements. She is dedicated to
-                        delivering innovative solutions that positively impact society and foster growth through
-                        creativity and innovation.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/team/UX.jpeg" class="img-team" alt="Zaw Myo Htwe, UI/UX Designer">
-                    <h2>Zaw Myo Htwe</h2>
-                    <h3>UI/UX Designer</h3>
-                    <p>
-                        Zaw Myo Htwe is a dedicated UI/UX Designer with over 2 years of experience in crafting
-                        user-centric and visually engaging digital experiences. Skilled in user research, wireframing,
-                        prototyping, and visual design, Zaw is committed to creating solutions that drive business
-                        growth. Proficient in tools such as Figma and Adobe Creative Suite, he thrives in collaborative
-                        environments to develop exceptional products that enhance the user experience and meet business
-                        objectives.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/team/sa.jpeg" class="img-team" alt="Eaint Myat Thwe, System Analyst">
-                    <h2>Eaint Myat Thwe</h2>
-                    <h3>System Analyst</h3>
-                    <p>
-                        Eaint Myat Thwe is a skilled system analyst and tester with over 3 years in the IT industry. She
-                        excels at analysing business requirements, planning project implementations, and creating
-                        comprehensive test plans. Her experience includes identifying and documenting bugs while working
-                        closely with development teams. Eaint has contributed to projects such as Training Management
-                        Systems, Assets Management Systems, Core HRMS, and CRM. With strong skills in requirements
-                        analysis, negotiation, and project management, she thrives under pressure and is committed to
-                        continuous learning.
-                    </p>
-                    <a href="#" class="social-icon" title="Facebook" target="_blank"><i
-                            class="fa fa-facebook brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Google-plus" target="_blank"><i
-                            class="fa fa-google-plus brd-size-30"></i></a>
-                    <a href="#" class="social-icon" title="Twitter" target="_blank"><i
-                            class="fa fa-twitter brd-size-30"></i></a>
-                </div>
-
-            </div>
-                            -->
         </div>
-    </section>
+
+        <div class="row justify-content-center team-grid">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>Frontend Developer</h4>
+                    <p>Remote</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>Backend Developer</h4>
+                    <p>Remote</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>Mobile App Developer</h4>
+                    <p>Remote</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>UI/UX Designer</h4>
+                    <p>Remote</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>QA Engineer</h4>
+                    <p>In-house</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>Project Coordinator</h4>
+                    <p>In-house</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="team-box text-center">
+                    <h4>+50 More</h4>
+                    <p>Developers & Staff</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- FOOTER 1 -->
     <footer>
